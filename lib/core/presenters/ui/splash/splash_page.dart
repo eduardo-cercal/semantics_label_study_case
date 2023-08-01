@@ -5,6 +5,18 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            const Color.fromRGBO(176, 104, 255, 0),
+            Theme.of(context).primaryColor,
+            Theme.of(context).primaryColor.withOpacity(0),
+          ],
+        ),
+      ),
+    );
   }
 }
